@@ -1,0 +1,17 @@
+<pre>
+  <code data-trim="" class="javascript">
+$('.close-small').live 'click', (e) ->
+  e.preventDefault()
+  $(this).trigger('mouseout')
+  count_applications = $('#count_applications').val()
+
+  if confirm("Are you sure?")
+    id = $(this).rel('id')
+
+    $.ajax
+      type: 'DELETE'
+      url: Routes.some_route_path(id, {format: 'json'})
+      data: {count: count_applications}
+
+  </code>
+</pre>
