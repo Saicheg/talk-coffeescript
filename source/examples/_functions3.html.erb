@@ -1,0 +1,21 @@
+<div class='container'>
+<pre class="coffee">
+  <code data-trim="" class="javascript">
+func = do (filename) ->
+  fs.readFile filename, (err, contents) ->
+    compile filename, contents.toString()
+  </code>
+</pre>
+
+<pre class="js">
+  <code data-trim="" class="javascript">
+var func;
+
+func = (function(filename) {
+  return fs.readFile(filename, function(err, contents) {
+    return compile(filename, contents.toString());
+  });
+})(filename);
+  </code>
+</pre>
+</div>

@@ -1,0 +1,30 @@
+<div class='container'>
+<pre class="coffee">
+  <code data-trim="" class="javascript">
+outer = 1
+
+changeNumbers = ->
+  inner = -1
+  outer = 10
+
+inner = changeNumbers()
+
+  </code>
+</pre>
+
+<pre class="js">
+  <code data-trim="" class="javascript">
+var changeNumbers, inner, outer;
+
+outer = 1;
+
+changeNumbers = function() {
+  var inner;
+  inner = -1;
+  return outer = 10;
+};
+
+inner = changeNumbers();
+  </code>
+</pre>
+</div>

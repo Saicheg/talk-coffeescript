@@ -1,0 +1,28 @@
+<div class='container'>
+<pre class="coffee">
+  <code data-trim="" class="javascript">
+awardMedals = (first, second='silver', others...) ->
+  gold   = first
+  silver = second
+  rest   = others
+  </code>
+</pre>
+
+<pre class="js">
+  <code data-trim="" class="javascript">
+var awardMedals,
+  __slice = [].slice;
+
+awardMedals = function() {
+  var first, gold, others, rest, second, silver;
+  first = arguments[0], second = arguments[1], others = 3 <= arguments.length ? __slice.call(arguments, 2) : [];
+  if (second == null) {
+    second = 'silver';
+  }
+  gold = first;
+  silver = second;
+  return rest = others;
+};
+  </code>
+</pre>
+</div>
